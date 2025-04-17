@@ -1,1 +1,2 @@
 # Iterable Sections
+This project is inspired by Zephyr [Iterable Sections](https://docs.zephyrproject.org/latest/kernel/iterable_sections/index.html), and I am going to demostrate how to create iterable sections at memory during compilation with linker script.
