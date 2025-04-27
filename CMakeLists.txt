@@ -10,8 +10,8 @@ add_custom_target(linker)
 include(extensions.cmake)
 
 # add subsections
-add_linker_subsection(".service_1")
-add_linker_subsection(".service_2")
+add_linker_subsection("service_1")
+add_linker_subsection("service_2")
 create_linker_script()
 
 # include source files

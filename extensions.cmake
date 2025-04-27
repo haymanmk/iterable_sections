@@ -30,7 +30,7 @@ function(create_linker_script)
             "  __${subsect_name}_start = .;\n"
             "  KEEP(*(${subsect_name}*))\n"
             "  __${subsect_name}_end = .;\n"
-            "} > FLASH\n"
+            "} >RAM AT> ROM\n"
         )
     endforeach()
 

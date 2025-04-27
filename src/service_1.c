@@ -17,3 +17,7 @@ void bye_world_service(void)
 
 REGISTER_SERVICE(hello_world, hello_world_service);
 REGISTER_SERVICE(bye_world, bye_world_service);
+
+// place data in the service sections
+const char service_1_data[] __attribute__((section("service_1"))) = "Service 1 data";
+const char service_2_data[] __attribute__((section("service_2"))) = "Service 2 data";

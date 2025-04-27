@@ -1,6 +1,6 @@
 MEMORY
 {
-    FLASH (rx) : ORIGIN = 0x08000000, LENGTH = 512K
+    ROM (rx) : ORIGIN = 0x08000000, LENGTH = 512K
     RAM (xrw) : ORIGIN = 0x20000000, LENGTH = 128K
 }
 
@@ -11,7 +11,7 @@ SECTIONS
         _registered_services_area_start = .;
         KEEP(*(SORT_BY_NAME(.registered_services.static.*)));
         _registered_services_area_end = .;
-    } >RAM AT> FLASH
+    } >RAM AT> ROM
     . = ALIGN(4);
 
     /* subsections */
